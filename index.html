@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ — Virtual Screen Manager</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: #1a1a1a;
+            color: #e0e0e0;
+            line-height: 1.7;
+        }
+
+        header {
+            background: #111;
+            border-bottom: 1px solid #333;
+            padding: 24px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: #fff;
+            letter-spacing: -0.5px;
+        }
+
+        header p {
+            margin-top: 6px;
+            font-size: 0.95rem;
+            color: #888;
+        }
+
+        nav {
+            background: #151515;
+            border-bottom: 1px solid #2a2a2a;
+            padding: 12px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: #888;
+            text-decoration: none;
+            font-size: 0.9rem;
+            margin: 0 16px;
+            transition: color 0.2s;
+        }
+
+        nav a:hover {
+            color: #ccc;
+        }
+
+        .container {
+            max-width: 780px;
+            margin: 0 auto;
+            padding: 48px 24px 80px;
+        }
+
+        .section {
+            margin-bottom: 52px;
+        }
+
+        .section-title {
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: #5b9bd5;
+            margin-bottom: 20px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #2a2a2a;
+        }
+
+        .faq-item {
+            margin-bottom: 28px;
+        }
+
+        .faq-item dt {
+            font-weight: 600;
+            color: #f0f0f0;
+            font-size: 1rem;
+            margin-bottom: 6px;
+        }
+
+        .faq-item dd {
+            color: #b0b0b0;
+            font-size: 0.95rem;
+            padding-left: 0;
+        }
+
+        .faq-item dd code {
+            background: #2a2a2a;
+            color: #d4d4d4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: "Cascadia Code", "Consolas", monospace;
+            font-size: 0.88em;
+        }
+
+        a {
+            color: #5b9bd5;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 32px 24px;
+            border-top: 1px solid #2a2a2a;
+            color: #555;
+            font-size: 0.85rem;
+        }
+
+        footer a {
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Virtual Screen Manager</h1>
+    <p>Frequently Asked Questions</p>
+</header>
+
+<nav>
+    <a href="#getting-started">Getting Started</a>
+    <a href="#switching">Switching Workspaces</a>
+    <a href="#apps">Managing Apps</a>
+    <a href="#settings">Settings</a>
+    <a href="#multimonitor">Multi-Monitor</a>
+    <a href="#licensing">Licensing</a>
+    <a href="#support">Support</a>
+</nav>
+
+<div class="container">
+
+    <div class="section" id="getting-started">
+        <div class="section-title">Getting Started</div>
+        <dl>
+            <div class="faq-item">
+                <dt>What is Virtual Screen Manager?</dt>
+                <dd>Virtual Screen Manager gives you up to nine independent virtual workspaces on each physical monitor. Apps stay open and running in the background — switching workspaces is instant and nothing ever closes or restarts.</dd>
+            </div>
+            <div class="faq-item">
+                <dt>How is this different from Windows virtual desktops?</dt>
+                <dd>Windows virtual desktops require you to manually manage which apps appear on each desktop and don't preserve taskbar visibility for hidden apps. Virtual Screen Manager keeps all your apps running in the taskbar, switches workspaces instantly, and automatically assigns new windows to whichever workspace you're on when you open them.</dd>
+            </div>
+            <div class="faq-item">
+                <dt>What are the system requirements?</dt>
+                <dd>Windows 10 (build 1903 or later) or Windows 11. Single or multiple physical monitors. 1920×1080 or higher recommended.</dd>
+            </div>
+            <div class="faq-item">
+                <dt>Do I need administrator privileges to run Virtual Screen Manager?</dt>
+                <dd>No. It runs as a standard user. As a consequence, it cannot manage applications that are themselves running as administrator (Task Manager, Registry Editor, etc.) — this is a Windows security boundary.</dd>
+            </div>
+        </dl>
+    </div>
+
+    <div class="section" id="switching">
+        <div class="section-title">Switching Workspaces</div>
+        <dl>
+            <div class="faq-item">
+                <dt>How do I switch workspaces?</dt>
+                <dd>Three ways: click any cell in the grid panel, move your mouse to a screen edge (edge navigation), or use keyboard hotkeys (Ctrl+Alt+A through Ctrl+Alt+I by default).</dd>
+            </div>
+            <div class="faq-item">
+                <dt>My hotkeys conflict with another application. Can I change them?</dt>
+                <dd>Yes. Open Settings and change the Hotkey Modifier. Ctrl+Shift and Alt+Shift are available alternatives. The workspace letters (A–I) are fixed.</dd>
+            </div>
+            <div class="faq-item">
+                <dt>Can I turn off edge navigation?</dt>
+                <dd>Yes. Toggle "Mouse edge switching" in Settings, or press Ctrl+Alt+M at any time. The state is saved automatically.</dd>
+            </div>
+            <div class="faq-item">
+                <dt>Edge navigation keeps firing when I don't want it to. What do I do?</dt>
+                <dd>Increase the Edge Hold Time slider in Settings. Most users find 400–700ms comfortable. You can also turn edge navigation off entirely if you prefer to use only clicks and hotkeys.</dd>
+            </div>
+        </dl>
+    </div>
+
+    <div class="section" id="apps">
+        <div class="section-title">Managing Applications</div>
+        <dl>
+            <div class="faq-item">
+                <dt>Will my applications close when I switch workspaces?</dt>
+                <dd>Never. Virtual Screen Manager moves apps off-screen and brings them back. They stay running in exactly the state you left them.</dd>
+            </div>
+            <div class="faq-item">
+                <dt>An application isn't showing up in my workspace. Why?</dt>
+                <dd>Two common causes: it's running with elevated privileges (e.g. Task Manager) and can't be tracked — this is a Windows limitation; or it was open before Virtual Screen Manager started. Switch away and back — discovery runs continuously and will pick it up within a few seconds.</dd>
+            </div>
+            <div class="faq-item">
+                <dt>I can't find an application — it seems to have disappeared.</dt>
+                <dd>It's almost certainly on another workspace. Look for cells in the grid with a medium-brightness fill — those have apps in them. Click through them to find it. You can also right-click the app's taskbar button and choose to move it to the current workspace.</dd>
+            </div>
+            <div class="faq-item">
+                <dt>Does Virtual Screen Manager work with games?</dt>
+                <dd>Windowed and borderless-windowed games work normally. Exclusive full-screen games (where the game takes full control of the display) cannot be tracked. Running games in borderless-windowed mode is recommended.</dd>
+            </div>
+            <div class="faq-item">
+                <dt>What happens to my apps when I close Virtual Screen Manager?</dt>
+                <dd>All tracked applications are restored to their normal on-screen positions before Virtual Screen Manager exits. Nothing is closed.</dd>
+            </div>
+            <div class="faq-item">
+                <dt>How do I move or resize the grid panel?</dt>
+                <dd>Click and drag anywhere on the panel to reposition it. Drag the resize handle in the lower-right corner to resize it. Both are saved automatically.</dd>
+            </div>
+        </dl>
+    </div>
+
+    <div class="section" id="settings">
+        <div class="section-title">Settings</div>
+        <dl>
+            <div class="faq-item">
+                <dt>Where are my settings stored?</dt>
+                <dd>Settings are saved to <code>%AppData%\Virtual Screen Manager\settings.json</code>. Paste that path into File Explorer's address bar to open the folder. Deleting the file resets everything to defaults.</dd>
+            </div>
+            <div class="faq-item">
+                <dt>Can I rename workspaces?</dt>
+                <dd>Not in this version. Workspace renaming is planned for a future update.</dd>
+            </div>
+            <div class="faq-item">
+                <dt>Can I have Virtual Screen Manager start automatically with Windows?</dt>
+                <dd>Yes. Check "Start with Windows" in Settings.</dd>
+            </div>
+            <div class="faq-item">
+                <dt>How do I uninstall Virtual Screen Manager?</dt>
+                <dd>Open Windows Settings &gt; Apps, search for Virtual Screen Manager, and select Uninstall. To fully clean up, you can also delete <code>%AppData%\Virtual Screen Manager</code> manually.</dd>
+            </div>
+        </dl>
+    </div>
+
+    <div class="section" id="multimonitor">
+        <div class="section-title">Multi-Monitor</div>
+        <dl>
+            <div class="faq-item">
+                <dt>Does Virtual Screen Manager work with multiple monitors?</dt>
+                <dd>Yes. Each physical screen gets its own independent workspace grid. You can have up to nine workspaces per screen simultaneously.</dd>
+            </div>
+            <div class="faq-item">
+                <dt>Can I sync all monitors to the same workspace?</dt>
+                <dd>Yes. Enable "Mirror all monitors" in Settings. When active, switching workspaces on any screen switches all screens together.</dd>
+            </div>
+            <div class="faq-item">
+                <dt>"Show secondary monitor panels" is greyed out in Settings. Is something wrong?</dt>
+                <dd>No — that option only applies when a second monitor is connected. It will become active as soon as you plug one in.</dd>
+            </div>
+        </dl>
+    </div>
+
+    <div class="section" id="licensing">
+        <div class="section-title">Licensing &amp; Pricing</div>
+        <dl>
+            <div class="faq-item">
+                <dt>What's included in the free version?</dt>
+                <dd>The free tier includes two workspaces — enough to try Virtual Screen Manager and see how it fits your workflow.</dd>
+            </div>
+            <div class="faq-item">
+                <dt>What do I get with an upgrade?</dt>
+                <dd>The Plus upgrade ($4.99) unlocks four workspaces. The Pro upgrade ($9.99) unlocks all nine. Upgrades are one-time purchases through the Microsoft Store — no subscription.</dd>
+            </div>
+            <div class="faq-item">
+                <dt>I purchased an upgrade but it isn't activating.</dt>
+                <dd>Make sure you're signed into the Microsoft Store with the same account used to purchase. If the issue persists, contact us at <a href="mailto:catio.productions.llc@gmail.com">catio.productions.llc@gmail.com</a>.</dd>
+            </div>
+            <div class="faq-item">
+                <dt>Does Virtual Screen Manager collect any data?</dt>
+                <dd>No personal data is collected or transmitted. Settings are stored locally on your machine only. See the full <a href="https://reesedear.github.io/Privacy/">privacy policy</a>.</dd>
+            </div>
+        </dl>
+    </div>
+
+    <div class="section" id="support">
+        <div class="section-title">Support</div>
+        <dl>
+            <div class="faq-item">
+                <dt>Does Virtual Screen Manager affect system performance?</dt>
+                <dd>No meaningful impact. It uses a lightweight polling timer and low-level Windows calls. CPU and memory usage are negligible.</dd>
+            </div>
+            <div class="faq-item">
+                <dt>Where do I report a bug or request a feature?</dt>
+                <dd><a href="https://github.com/ReeseDear/MultiMonitor/issues">github.com/ReeseDear/MultiMonitor/issues</a></dd>
+            </div>
+            <div class="faq-item">
+                <dt>How do I contact support?</dt>
+                <dd>Email <a href="mailto:catio.productions.llc@gmail.com">catio.productions.llc@gmail.com</a>. We respond to all support requests personally — please allow 1–2 business days.</dd>
+            </div>
+            <div class="faq-item">
+                <dt>Want to support the cause behind this app?</dt>
+                <dd>Virtual Screen Manager is built by Catio Productions in support of cat rescue and TNR (Trap-Neuter-Return) efforts. If that resonates with you, donations are welcome at <a href="https://gofund.me/6e31cd59e">gofund.me/6e31cd59e</a>.</dd>
+            </div>
+        </dl>
+    </div>
+
+</div>
+
+<footer>
+    <p>Virtual Screen Manager &mdash; by <a href="mailto:catio.productions.llc@gmail.com">Catio Productions</a></p>
+    <p style="margin-top:8px"><a href="https://reesedear.github.io/Privacy/">Privacy Policy</a></p>
+</footer>
+
+</body>
+</html>
